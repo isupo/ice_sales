@@ -1,0 +1,7 @@
+.idea
+config.py
+__pycache__
+
+
+sales.csv
+weather.csv
