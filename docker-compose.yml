@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  streamlit:
+    build: .
+    command: streamlit run 05_streamlit.py
+    volumes:
+      - .:/code
+    ports:
+      - "80:8501"

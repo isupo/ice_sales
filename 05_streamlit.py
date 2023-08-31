@@ -23,6 +23,6 @@ data = res.fetchall()
 df = pd.DataFrame(data)
 df.columns = ['eventdate', 'count', 'temp']
 df['count'] = df['count'] / 50
-
+st.text("Продажи")
 st.line_chart(df, x='eventdate', y=['count', 'temp'])
 # python3 -m streamlit run 05_streamlit.py
